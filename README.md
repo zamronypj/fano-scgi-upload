@@ -38,8 +38,7 @@ Run application,
 ```
 $ ./bin/app.cgi
 ```
-
-Open Internet browser and go to URL http://scgi-upload.fano.
+Make sure `storages/upload` directory is writable. Open Internet browser and go to URL http://scgi-upload.fano.
 
 ### Free Pascal installation
 
@@ -174,7 +173,7 @@ Any `pas` or `inc` files or shell scripts is not needed in deployment machine in
 
 So for this repository, you will need to copy `public`, `Templates`, `config`
 and `storages` directories to your deployment machine. make sure that
-`storages/upload` directory is writable by web server.
+`storages/upload` directory is writable.
 
 ## Known Issues
 
