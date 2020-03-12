@@ -1,4 +1,4 @@
-# Fano Framework Validation Example
+# Fano Framework File Upload Validation Example
 
 Example web application skeleton using Fano Framework, Pascal web application framework. This project demonstrates how to handle file upload with various validation rules such as virus scanning validation, image file format validation and file size validation.
 
