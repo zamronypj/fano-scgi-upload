@@ -9,6 +9,9 @@ program app;
 
 uses
 
+    {$IFDEF UNIX}
+    cthreads,
+    {$ENDIF}
     fano,
     bootstrap;
 
@@ -32,6 +35,14 @@ begin
      *
      * @author AUTHOR_NAME <author@email.tld>
      *------------------------------------------------*)
-    appInstance := TBootstrapApp.create(host, port);
+    appInstance := TDaemonWebApplication.create(
+        TScgiAppServiceProvider.create(
+            TServerAppServiceProvider.create(
+                TAppServiceProvider.create(),
+                (TInetSvrFactory.create(host, port) as ISocketSvrFactory).build()
+            )
+        ),
+        TAppRoutes.create()
+    );
     appInstance.run();
 end.

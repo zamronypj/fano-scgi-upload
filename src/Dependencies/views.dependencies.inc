@@ -9,3 +9,5 @@
 {%dependencies.inc}
 
 {---put your dependencies registration here---}
+container.add('homeView', THomeViewFactory.create());
+container.add('homeViewParams', TNullViewParametersFactory.create());
