@@ -1,6 +1,6 @@
 # Fano Framework Validation Example
 
-Example web application skeleton using Fano Framework, Pascal web application framework. This project demonstrates how to handle file upload with various validation rules.
+Example web application skeleton using Fano Framework, Pascal web application framework. This project demonstrates how to handle file upload with various validation rules such as virus scanning validation, image file format validation and file size validation.
 
 This project is generated using [Fano CLI](https://github.com/fanoframework/fano-cli)
 command line tools to help scaffolding web application using Fano Framework.
@@ -10,6 +10,7 @@ command line tools to help scaffolding web application using Fano Framework.
 - [Free Pascal](https://www.freepascal.org/) >= 3.0
 - Web Server (Apache, nginx)
 - mod_proxy_scgi (Apache)
+- [ClamAV antivirus](https://www.clamav.net)
 - [Fano Web Framework](https://github.com/fanoframework/fano)
 
 ## Installation
