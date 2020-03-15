@@ -43,14 +43,14 @@ uses
                 TCompositeValidator.create([
                     TRequiredValidator.create(),
                     TUploadedFileValidator.create(),
-                    //TAntivirusValidator.create(TNullAv.create()),
-                    TAntivirusValidator.create(TLocalClamdAv.create('/var/run/clamav/clamd.ctl')),
                     TUploadedSizeValidator.create(500 * 1024),
                     TUploadedMimeValidator.create(['image/jpg', 'image/jpeg', 'image/png']),
                     TAnyOfValidator.create([
                         TImagePngValidator.create(),
                         TImageJpgValidator.create()
-                    ])
+                    ]),
+                    //TAntivirusValidator.create(TNullAv.create()),
+                    TAntivirusValidator.create(TLocalClamdAv.create('/var/run/clamav/clamd.ctl'))
                 ])
             ) as IDependency;
     end;
