@@ -52,6 +52,8 @@
 -Fu$USER_APP_DIR$/App/ValidationError/Controllers/Factories
 
 -Fu$USER_APP_DIR$/App/Upload/Validations/*
+-Fu$USER_APP_DIR$/Middlewares
+-Fu$USER_APP_DIR$/Middlewares/*
 
 #-Fu$USER_APP_DIR$/path/to/other/units
 #-Fu$USER_APP_DIR$/path/to/other/units
